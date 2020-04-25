@@ -16,9 +16,24 @@ func main() {
 	// splic2.print()
 	// splic2.saveToFile("splice2 file")
 
-	splic3 := newDeckFromFile("splice1 file")
-	splic3.print()
-	fmt.Println(" ")
-	splic3.shuffle()
-	splic3.print()
+	// splic3 := newDeckFromFile("splice1 file")
+	// splic3.print()
+	// fmt.Println(" ")
+	// splic3.shuffle()
+	// splic3.print()
+
+	//declareStruct().printStruct()
+	dom := person{name: "groot",
+		phoneNo: 789561230,
+		address: addressInfo{
+			houseNo: "C-77",
+			street:  "Mall",
+			city:    "Junaghar",
+			state:   "UP",
+			pinCode: 789456,
+		},
+	}
+
+	dom.colneStruct()
+	fmt.Printf("%+v", dom)
 }
