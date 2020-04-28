@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	//var card string = "Ace of spade"
 	// splic1 := newDeck()
@@ -23,17 +21,35 @@ func main() {
 	// splic3.print()
 
 	//declareStruct().printStruct()
-	dom := person{name: "groot",
-		phoneNo: 789561230,
-		address: addressInfo{
-			houseNo: "C-77",
-			street:  "Mall",
-			city:    "Junaghar",
-			state:   "UP",
-			pinCode: 789456,
-		},
-	}
+	// dom := person{name: "groot",
+	// 	phoneNo: 789561230,
+	// 	address: addressInfo{
+	// 		houseNo: "C-77",
+	// 		street:  "Mall",
+	// 		city:    "Junaghar",
+	// 		state:   "UP",
+	// 		pinCode: 789456,
+	// 	},
+	// }
 
-	dom.colneStruct()
-	fmt.Printf("%+v", dom)
+	//dom.colneStruct()
+	//fmt.Printf("%+v", dom)
+	//createMap()
+
+	//var colorM map[string]string
+	// colorM := map[string]string{
+	// 	"white": "nh",
+	// }
+	// fmt.Println(colorM)
+
+	// colorN := make(map[int]string)
+	// colorN[2] = "jdfv"
+	// //fmt.Println(colorN)
+	// printMap(colorN)
+
+	en := english{}
+	sp := spanish{}
+
+	printGreeting(en)
+	printGreeting(sp)
 }
