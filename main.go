@@ -47,9 +47,21 @@ func main() {
 	// //fmt.Println(colorN)
 	// printMap(colorN)
 
-	en := english{}
-	sp := spanish{}
+	// en := english{}
+	// sp := spanish{}
 
-	printGreeting(en)
-	printGreeting(sp)
+	// printGreeting(en)
+	// printGreeting(sp)
+
+	linksArr := []string{
+		"http://google.com",
+		"http://amzon.com",
+		"http://facebook.com",
+		"http://ttt.com",
+		"http://golang.org",
+	}
+
+	for _, link := range linksArr {
+		go checkLinks(link)
+	}
 }
